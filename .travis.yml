@@ -4,6 +4,7 @@ node_js:
 cache: yarn
 deploy:
   provider: pages
+  local-dir: build
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
@@ -11,3 +12,6 @@ deploy:
     branch: master
 script:
   - echo "Skipping Tests"
+before_deploy:
+  - yarn build
+  - yarn start
