@@ -1,0 +1,17 @@
+h2 {
+  display: grid;
+  grid-template-columns: minmax(1em, 1fr) auto minmax(1em, 1fr);
+  align-items: center;
+  grid-gap: 1em;
+  width: 100%;
+}
+
+h2:before,
+h2:after {
+  content: '';
+  border-top: 1px solid hsl(0, 0%, 35%);
+}
+
+.center {
+  text-align: center;
+}

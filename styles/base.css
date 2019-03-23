@@ -1,0 +1,29 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  text-align: center;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  word-break: keep-all;
+  background-color: hsl(220, 5%, 75%);
+}
+
+div.wrap {
+  max-width: 48em;
+  background-color: hsl(220, 5%, 95%);
+  padding: 1em;
+}

@@ -1,0 +1,16 @@
+{
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["node_modules/**/*.ts"]
+  },
+  "rules": {
+    "variable-name": [
+      true,
+      "allow-pascal-case",
+      "allow-leading-underscore",
+      "ban-keywords",
+      "check-format"
+    ],
+    "interface-name": false
+  }
+}
